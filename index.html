@@ -59,15 +59,15 @@
       padding: 0 20px;
     }
     
-    /* تحسينات الهيدر */
+    /* تحسينات الهيدر - خلفية جميلة */
     .transparent-header {
-      background: rgba(255, 255, 255, 0.95) !important;
+      background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%) !important;
       backdrop-filter: blur(10px);
       padding: 15px 0;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       width: 100%;
     }
     
@@ -78,11 +78,17 @@
     }
     
     .logo {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: bold;
-      color: var(--primary-color);
+      color: white;
       display: flex;
       align-items: center;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    
+    .logo i {
+      margin-left: 10px;
+      color: #e67e22;
     }
     
     .nav-links {
@@ -92,15 +98,16 @@
     
     .nav-links a {
       text-decoration: none;
-      color: var(--dark-text);
+      color: white;
       font-weight: 500;
-      transition: color 0.3s;
-      padding: 5px 0;
+      transition: all 0.3s;
+      padding: 8px 0;
       position: relative;
+      font-size: 16px;
     }
     
     .nav-links a:hover {
-      color: var(--secondary-color);
+      color: #e67e22;
     }
     
     .nav-links a::after {
@@ -110,7 +117,7 @@
       height: 2px;
       bottom: 0;
       right: 0;
-      background-color: var(--secondary-color);
+      background-color: #e67e22;
       transition: width 0.3s;
     }
     
@@ -120,8 +127,8 @@
     
     /* تحسينات القسم الرئيسي */
     .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.postimg.cc/kXBd7YGF/IMG-2564.jpg') center/cover no-repeat; 
-      padding: 120px 20px;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/kXBd7YGF/IMG-2564.jpg') center/cover no-repeat; 
+      padding: 140px 20px 100px;
       color: #fff;
       text-align: center;
       margin-top: 0;
@@ -156,7 +163,7 @@
       text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
     
-    /* تحسينات أيقونات الاتصال */
+    /* تحسينات أيقونات الاتصال - إرجاع اللون الأخضر للواتساب */
     .icon-container {
       display: flex;
       justify-content: center;
@@ -173,33 +180,33 @@
       border-radius: 50%;
       color: white;
       font-size: 28px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
       text-decoration: none;
       position: relative;
     }
     
     .icon-button.wa {
-      background: var(--wa-green);
+      background: #25d366; /* اللون الأخضر الأصلي للواتساب */
     }
     
     .icon-button.call {
-      background: var(--primary-color);
+      background: #2c3e50;
     }
     
     .icon-button:hover {
       transform: scale(1.1);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
     
     .icon-button span {
       position: absolute;
-      bottom: -25px;
-      font-size: 12px;
+      bottom: -30px;
+      font-size: 13px;
       white-space: nowrap;
-      background: rgba(0,0,0,0.7);
-      padding: 3px 8px;
-      border-radius: 4px;
+      background: rgba(0,0,0,0.8);
+      padding: 5px 10px;
+      border-radius: 5px;
       opacity: 0;
       transition: opacity 0.3s;
     }
@@ -496,7 +503,7 @@
       }
       
       .hero-section {
-        padding: 80px 20px;
+        padding: 100px 20px 80px;
       }
       
       .icon-button {
@@ -530,7 +537,7 @@
     
     @media (max-width: 480px) {
       .hero-section {
-        padding: 60px 15px;
+        padding: 80px 15px 60px;
       }
       
       h1 {
@@ -550,15 +557,19 @@
       .services-grid {
         grid-template-columns: 1fr;
       }
+      
+      .logo {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- الهيدر المحسن -->
+  <!-- الهيدر المحسن مع خلفية جميلة -->
   <header class="transparent-header">
     <div class="container">
-      <div class="logo">ركن الحفلات للمناسبات</div>
+      <div class="logo"><i class="fas fa-couch"></i> ركن الحفلات للمناسبات</div>
       <nav class="nav-links">
         <a href="#tables-chairs">طاولات وكراسي</a>
         <a href="#sofas">كنب فاخر</a>
