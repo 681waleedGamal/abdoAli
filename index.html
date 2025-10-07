@@ -19,6 +19,22 @@
 <script>
   gtag('event', 'conversion', {'send_to': 'AW-17577098748/Ub2nCIypnagbEPz7tL1B'});
 </script>
+<!-- Event snippet for جهة الاتصال conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17577098748/Ub2nCIypnagbEPz7tL1B',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
   <meta name="description" content="تأجير كراسي وطاولات، تأجير كنب فاخر، تأجير جلسات شعبية ومغربية، تأجير سماعات وشاشات وخيام ومكيفات — نوفر كل مستلزمات الحفلات والمناسبات في الدمام والخبر والرياض وجدة.">
   <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, جلسات شعبية, جلسات مغربية, تأجير سماعات, تأجير شاشات, تأجير خيام, تأجير مكيفات, مستلزمات حفلات, مناسبات الدمام, الخبر, الرياض, جدة">
